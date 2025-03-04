@@ -1,5 +1,6 @@
 import Image from "next/image";
 import TruckCard from "@/components/TruckCard";
+import { Search, Truck, Send, KeySquare } from "lucide-react";
 
 export default function Home() {
   return (
@@ -11,10 +12,13 @@ export default function Home() {
           <span className="text-blue-500">CheapiesCorner</span> Rentals
         </p>
         <p className="text-lg mt-8">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam justo nec ligula eleifend efficitur.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam
+          justo nec ligula eleifend efficitur.
         </p>
         <div>
-          <button className="bg-blue-700 px-5 py-3 rounded-md mt-8">VIEW OUR FLEET</button>
+          <button className="bg-blue-700 px-5 py-3 rounded-md mt-8">
+            VIEW OUR FLEET
+          </button>
         </div>
       </div>
 
@@ -40,9 +44,11 @@ export default function Home() {
       {/* Display latest cars */}
       <div className="flex flex-col gap-5 relative bg-white text-black p-10">
         <p className="font-semibold text-2xl">Latest Trucks</p>
-        <button className="bg-blue-700 px-5 py-3 rounded-md text-white">Show all</button>
+        <button className="bg-blue-700 px-5 py-3 rounded-md text-white">
+          Show all
+        </button>
         {/* Card for the truck */}
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col gap-16 justify-center">
           <TruckCard
             imageUrl="https://via.placeholder.com/500"
             title="Product 1"
@@ -67,6 +73,50 @@ export default function Home() {
             price="$99.99"
             buttonText="See Full Details"
           />
+        </div>
+      </div>
+      {/* How we work component */}
+      <div className="flex flex-col gap-16 relative bg-white text-black p-10">
+        <p className="font-semibold text-2xl">How we work</p>
+        <div className="flex flex-col items-center">
+          {/* Icon area */}
+          <div className="bg-blue-500 rounded-full p-5">
+            <Search size={55} color="white" />
+          </div>
+          <p className="font-semibold text-xl">Browse Our Fleet</p>
+          <p className="text-center text-gray-500 max-w-xs">
+            Lorem ipsum dolor sit amet, consectetur adipiscing
+          </p>
+        </div>
+        <div className="flex flex-col items-center">
+          {/* Icon area */}
+          <div className="bg-blue-500 rounded-full p-5">
+            <Truck size={55} color="white" />
+          </div>
+          <p className="font-semibold text-xl">Select Your Vehicle</p>
+          <p className="text-center text-gray-500 max-w-xs">
+            Lorem ipsum dolor sit amet, consectetur adipiscing
+          </p>
+        </div>
+        <div className="flex flex-col items-center">
+          {/* Icon area */}
+          <div className="bg-blue-500 rounded-full p-5">
+            <Send size={55} color="white" />
+          </div>
+          <p className="font-semibold text-xl">Submit an Enquiry</p>
+          <p className="text-center text-gray-500 max-w-xs">
+            Lorem ipsum dolor sit amet, consectetur adipiscing
+          </p>
+        </div>
+        <div className="flex flex-col items-center">
+          {/* Icon area */}
+          <div className="bg-blue-500 rounded-full p-5">
+            <KeySquare size={55} color="white" />
+          </div>
+          <p className="font-semibold text-xl">Pick Up & Drive</p>
+          <p className="text-center text-gray-500 max-w-xs">
+            Lorem ipsum dolor sit amet, consectetur adipiscing
+          </p>
         </div>
       </div>
     </div>
