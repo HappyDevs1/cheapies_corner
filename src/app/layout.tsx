@@ -1,4 +1,4 @@
-"use client"; 
+"use client";
 
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -17,14 +17,8 @@ const geistMono = Geist_Mono({
 
 // Define background images per page
 const backgroundImages: Record<string, string> = {
-  "/": "url('https://img.freepik.com/free-photo/truck-vehicle-with-trailers-background_342744-1297.jpg')",
-  "/about": "url('https://img.freepik.com/free-photo/truck-vehicle-with-trailers-background_342744-1297.jpg')",
-};
-
-// Define height coverage for each page
-const heightStyles: Record<string, string> = {
-  "/": "min-h-[80px]",
-  "/about": "min-h-[50vh]",
+  "/": "url('https://img.freepik.com/free-photo/truck-vehicle-with-trailers-background_342744-1297.jpg')", // Home page background
+  "/about": "url('https://img.freepik.com/free-photo/truck-vehicle-with-trailers-background_342744-1297.jpg')", // About page background
 };
 
 export default function RootLayout({
@@ -44,20 +38,22 @@ export default function RootLayout({
         {/* Background section only if a background image exists */}
         {backgroundImage ? (
           <div
-            className={`relative w-full bg-cover bg-center ${heightStyles[pathname] || "min-h-[70vh]"}`}
-            style={{ backgroundImage }}
+            className={`relative w-full bg-cover bg-center ${pathname === "/" ? "min-h-[70vh]" : "min-h-[50vh]"}`}
+            style={{
+              backgroundImage,
+              backgroundSize: "cover", // Ensures the image covers the container
+              backgroundPosition: "center center", // Focuses on the center of the image
+              backgroundAttachment: "fixed", // Keeps background fixed during scrolling
+            }}
           >
             {/* Dark overlay ONLY if there's a background image */}
             <div className="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
-
             {/* Content stays visible on top */}
-            <div className="relative flex justify-center items-center text-white text-center p-10 min-h-full">
-              {children}
-            </div>
+            <div className="relative z-10 pt-20">{children}</div>
           </div>
         ) : (
           // Normal content for pages without a background image
-          <div className="relative">{children}</div>
+          <div className="relative pt-20">{children}</div>
         )}
       </body>
     </html>
