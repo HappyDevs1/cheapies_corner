@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div>
       {/* First container - Inside background image */}
-      <div className="relative bg-cover bg-center min-h-[70vh] p-10 text-white text-center object-">
+      <div className="relative bg-cover bg-center min-h-[70vh] p-10 text-white text-center object- md:pt-32">
         <p className="text-4xl font-bold">
           Explore the Road Ahead with{" "}
           <span className="text-blue-500">CheapiesCorner</span> Rentals
@@ -43,10 +43,14 @@ export default function Home() {
       </div>
       {/* Display latest cars */}
       <div className="flex flex-col gap-5 relative bg-white text-black p-10">
+        <div className="md:flex justify-between items-center">
         <p className="font-semibold text-2xl">Latest Trucks</p>
-        <button className="bg-blue-700 px-5 py-3 rounded-md text-white">
+        <div>
+        <button className="bg-blue-700 px-28 py-3 rounded-md text-white md:px-10">
           Show all
         </button>
+        </div>
+        </div>
         {/* Card for the truck */}
         <div className="flex flex-col gap-16 justify-center">
           <TruckCard
