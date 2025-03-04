@@ -1,4 +1,5 @@
 import Image from "next/image";
+import TruckCard from "@/components/TruckCard";
 
 export default function Home() {
   return (
@@ -41,8 +42,31 @@ export default function Home() {
         <p className="font-semibold text-2xl">Latest Trucks</p>
         <button className="bg-blue-700 px-5 py-3 rounded-md text-white">Show all</button>
         {/* Card for the truck */}
-        <div>
-          
+        <div className="flex flex-col justify-center">
+          <TruckCard
+            imageUrl="https://via.placeholder.com/500"
+            title="Product 1"
+            price="$99.99"
+            buttonText="See Full Details"
+          />
+          <TruckCard
+            imageUrl="https://via.placeholder.com/500"
+            title="Product 2"
+            price="$99.99"
+            buttonText="See Full Details"
+          />
+          <TruckCard
+            imageUrl="https://via.placeholder.com/500"
+            title="Product 3"
+            price="$99.99"
+            buttonText="See Full Details"
+          />
+          <TruckCard
+            imageUrl="https://via.placeholder.com/500"
+            title="Product 4"
+            price="$99.99"
+            buttonText="See Full Details"
+          />
         </div>
       </div>
     </div>
