@@ -23,7 +23,7 @@ export default function Home() {
       </div>
 
       {/* Second container - Outside the background image */}
-      <div className="flex flex-col gap-8 relative bg-white text-black p-10">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 relative bg-white text-black p-10">
         <div className="flex flex-col gap-2 text-center">
           <p className="text-blue-700 text-4xl font-bold">10+</p>
           <p className="text-lg font-semibold">Years of Experience</p>
@@ -41,18 +41,21 @@ export default function Home() {
           <p className="text-lg font-semibold">Locations</p>
         </div>
       </div>
-      {/* Display latest cars */}
+
+      {/* Display latest trucks */}
       <div className="flex flex-col gap-5 relative bg-white text-black p-10">
+        {/* Header Section */}
         <div className="md:flex justify-between items-center">
-        <p className="font-semibold text-2xl">Latest Trucks</p>
-        <div>
-        <button className="bg-blue-700 px-28 py-3 rounded-md text-white md:px-10">
-          Show all
-        </button>
+          <p className="font-semibold text-2xl">Latest Trucks</p>
+          <div>
+            <button className="bg-blue-700 px-28 py-3 rounded-md text-white md:px-10">
+              Show all
+            </button>
+          </div>
         </div>
-        </div>
-        {/* Card for the truck */}
-        <div className="flex flex-col gap-16 justify-center">
+
+        {/* Card Grid Layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-center">
           <TruckCard
             imageUrl="https://via.placeholder.com/500"
             title="Product 1"
@@ -79,6 +82,7 @@ export default function Home() {
           />
         </div>
       </div>
+
       {/* How we work component */}
       <div className="flex flex-col gap-16 relative bg-white text-black p-10">
         <p className="font-semibold text-2xl">How we work</p>
