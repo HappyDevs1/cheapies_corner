@@ -23,22 +23,22 @@ export default function Home() {
       </div>
 
       {/* Second container - Outside the background image */}
-      <div className="flex flex-col gap-5 relative bg-white text-black p-10">
-        <div className="flex flex-col text-center">
+      <div className="flex flex-col gap-8 relative bg-white text-black p-10">
+        <div className="flex flex-col gap-2 text-center">
           <p className="text-blue-700 text-4xl font-bold">10+</p>
-          <p className="text-lg">Years of Experience</p>
+          <p className="text-lg font-semibold">Years of Experience</p>
         </div>
-        <div className="flex flex-col text-center">
+        <div className="flex flex-col gap-2 text-center">
           <p className="text-blue-700 text-4xl font-bold">1000+</p>
-          <p className="text-lg">Happy Clients</p>
+          <p className="text-lg font-semibold">Happy Clients</p>
         </div>
-        <div className="flex flex-col text-center">
+        <div className="flex flex-col gap-2 text-center">
           <p className="text-blue-700 text-4xl font-bold">200+</p>
-          <p className="text-lg">Vehicles</p>
+          <p className="text-lg font-semibold">Vehicles</p>
         </div>
-        <div className="flex flex-col text-center">
+        <div className="flex flex-col gap-2 text-center">
           <p className="text-blue-700 text-4xl font-bold">10+</p>
-          <p className="text-lg">Locations</p>
+          <p className="text-lg font-semibold">Locations</p>
         </div>
       </div>
       {/* Display latest cars */}
