@@ -61,24 +61,40 @@ export default function Home() {
             title="Product 1"
             price="$99.99"
             buttonText="See Full Details"
+            mileage={30500}
+            transmission="Automatic"
+            year={2019}
+            condition="Used"
           />
           <TruckCard
             imageUrl="https://via.placeholder.com/500"
             title="Product 2"
             price="$99.99"
             buttonText="See Full Details"
+            mileage={30500}
+            transmission="Automatic"
+            year={2019}
+            condition="Used"
           />
           <TruckCard
             imageUrl="https://via.placeholder.com/500"
             title="Product 3"
             price="$99.99"
             buttonText="See Full Details"
+            mileage={30500}
+            transmission="Automatic"
+            year={2019}
+            condition="Used"
           />
           <TruckCard
             imageUrl="https://via.placeholder.com/500"
             title="Product 4"
             price="$99.99"
             buttonText="See Full Details"
+            mileage={30500}
+            transmission="Automatic"
+            year={2019}
+            condition="Used"
           />
         </div>
       </div>
