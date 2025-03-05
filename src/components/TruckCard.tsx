@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Gauge, Settings2, CalendarDays, Truck } from "lucide-react";
 
 // Define the props the card will accept
 interface TruckCardProps {
@@ -6,9 +7,13 @@ interface TruckCardProps {
   title: string;
   price: string;
   buttonText: string;
+  mileage: number;
+  transmission: string;
+  year: number;
+  condition: string
 }
 
-const TruckCard: React.FC<TruckCardProps> = ({ imageUrl, title, price, buttonText }) => {
+const TruckCard: React.FC<TruckCardProps> = ({ imageUrl, title, price, buttonText, mileage, transmission, year, condition }) => {
   return (
     <div className="max-w-sm rounded-lg shadow-lg overflow-hidden bg-white">
       {/* Image Section */}
@@ -28,6 +33,26 @@ const TruckCard: React.FC<TruckCardProps> = ({ imageUrl, title, price, buttonTex
 
         {/* Price */}
         <p className="text-lg text-blue-600 mt-2">{price}</p>
+
+        {/* Specs */}
+        <div className="flex justify-between bg-gray-100 rounded-xl py-3 px-5">
+          <div className="flex flex-col text-gray-500 text-sm items-center">
+            <Gauge size={20}/>
+            <p>{mileage}</p>
+          </div>
+          <div className="flex flex-col text-gray-500 text-sm items-center">
+            <Settings2 size={20} />
+            <p>{transmission}</p>
+          </div>
+          <div className="flex flex-col text-gray-500 text-sm items-center">
+            <CalendarDays size={20} />
+            <p>{year}</p>
+          </div>
+          <div className="flex flex-col text-gray-500 text-sm items-center">
+            <Truck size={20} />
+            <p>{condition}</p>
+          </div>
+        </div>
 
         {/* Button */}
         <div className="mt-4">
