@@ -101,7 +101,8 @@ export default function Home() {
 
       {/* How we work component */}
       <div className="flex flex-col gap-16 relative bg-white text-black p-10">
-        <p className="font-semibold text-2xl">How we work</p>
+        <p className="font-semibold text-2xl lg:self-center">How we work</p>
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 ">
         <div className="flex flex-col items-center">
           {/* Icon area */}
           <div className="bg-blue-500 rounded-full p-5">
@@ -141,6 +142,7 @@ export default function Home() {
           <p className="text-center text-gray-500 max-w-xs">
             Lorem ipsum dolor sit amet, consectetur adipiscing
           </p>
+        </div>
         </div>
       </div>
     </div>
