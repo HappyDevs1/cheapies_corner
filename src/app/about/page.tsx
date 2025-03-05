@@ -46,6 +46,20 @@ export default function About () {
           <p className="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
         </div>
       </div>
+      {/* Founder information */}
+      <div className="flex flex-col gap-14 relative bg-white text-black p-10">
+        <div>
+          <Image src="https://img.freepik.com/free-photo/friendly-ceo-desk_23-2147626294.jpg" alt="CEO" width={750} height={250} className="rounded-xl" />
+        </div>
+        <div className="flex flex-col gap-7">
+          <p className="font-semibold text-2xl">Meet Our Founder</p>
+          <p className="text-lg text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div className="flex flex-col gap-7">
+          <p className="font-semibold text-2xl">Leadership & Expertise</p>
+          <p className="text-lg text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
     </div>
   )
 }
