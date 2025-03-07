@@ -19,6 +19,7 @@ const geistMono = Geist_Mono({
 const backgroundImages: Record<string, string> = {
   "/": "url('https://img.freepik.com/free-photo/truck-vehicle-with-trailers-background_342744-1297.jpg')", // Home page background
   "/about": "url('https://img.freepik.com/free-photo/truck-vehicle-with-trailers-background_342744-1297.jpg')", // About page background
+  "/fleet": "url('https://img.freepik.com/free-photo/truck-vehicle-with-trailers-background_342744-1297.jpg')"
 };
 
 export default function RootLayout({
