@@ -2,7 +2,7 @@ import { Mail, Phone, Twitter, Instagram, Facebook, MessageCircle } from "lucide
 
 export default function ContactPage() {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 px-20">
+    <div className="grid grid-cols-1 px-5 lg:grid-cols-2 lg:px-20">
       {/* Container for header texts */}
       <div>
       <div className="flex flex-col gap-3">
