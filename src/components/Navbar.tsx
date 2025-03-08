@@ -2,15 +2,21 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { Truck } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const router = useRouter();
   return (
     <nav className="bg-white shadow-md p-4">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
+        <div className="flex gap-2 items-center">
+        <Truck size={32} color="blue" />
         <p className="font-semibold text-xl">CheapiesCorner</p>
+        </div>
 
         {/* Hamburger Menu Button (Mobile) */}
         <button
@@ -57,8 +63,8 @@ export const Navbar = () => {
             </Link>
           </li>
           <li>
-            <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">
-              Buy Now
+            <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700" onClick={() => router.push("/contact")}>
+              Enquire
             </button>
           </li>
         </ul>
@@ -88,8 +94,8 @@ export const Navbar = () => {
             </Link>
           </li>
           <li>
-            <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">
-              Buy Now
+            <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700" onClick={() => router.push("/contact")}>
+              Enquire
             </button>
           </li>
         </ul>
