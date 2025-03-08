@@ -2,7 +2,7 @@ import { Twitter, Instagram, Facebook, MessageCircle, Truck } from 'lucide-react
 
 export default function Footer () {
   return (
-    <div className="grid grid-col-1 md:grid-cols-2 gap-10 px-7 py-14 bg-gray-700 text-white">
+    <div className="grid grid-col-1 md:grid-cols-2 gap-10 px-7 py-14 bg-gray-700 text-white mt-10">
       <div className="flex flex-col gap-4">
         <div className='flex gap-1 items-center'>
         <Truck size={26} />
