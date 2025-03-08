@@ -1,22 +1,27 @@
+"use client"
+
 import Image from "next/image";
 import TruckCard from "@/components/TruckCard";
 import { Search, Truck, Send, KeySquare } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter()
+
   return (
     <div>
       {/* First container - Inside background image */}
       <div className="relative bg-cover bg-center min-h-[70vh] p-10 text-white text-center object- md:pt-32">
         <p className="text-4xl font-bold">
           Explore the Road Ahead with{" "}
-          <span className="text-blue-500">CheapiesCorner</span> Rentals
+          <span className="text-blue-500">CheapiesCorner</span> Trucks
         </p>
         <p className="text-lg mt-8">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam
           justo nec ligula eleifend efficitur.
         </p>
         <div>
-          <button className="bg-blue-700 px-5 py-3 rounded-md mt-8">
+          <button className="bg-blue-700 px-5 py-3 rounded-md mt-8" onClick={() => router.push("/fleet")}>
             VIEW OUR FLEET
           </button>
         </div>
@@ -48,7 +53,7 @@ export default function Home() {
         <div className="md:flex justify-between items-center">
           <p className="font-semibold text-2xl">Latest Trucks</p>
           <div>
-            <button className="bg-blue-700 px-28 py-3 rounded-md text-white md:px-10">
+            <button className="bg-blue-700 px-28 py-3 rounded-md text-white md:px-10" onClick={() => router.push("/fleet")}>
               Show all
             </button>
           </div>
