@@ -19,8 +19,8 @@ export default function Fleet() {
       <div className="relative bg-white text-black p-5 md:gap-10 grid grid-cols-1 md:grid-cols-2 gap-7 md:px-5 lg:grid-cols-4">
         <TruckCard
           imageUrl="https://cdn.yello.link/sheltonmotors/files/2024/06/06154729/20240604_164022-1-480x360.jpg"
-          title="Product 4"
-          price="$99.99"
+          title="Iveco"
+          price="R500 000"
           buttonText="See Full Details"
           mileage={30500}
           transmission="Automatic"
@@ -29,8 +29,8 @@ export default function Fleet() {
         />
         <TruckCard
           imageUrl="https://cdn.yello.link/sheltonmotors/files/2024/06/06154729/20240604_164022-1-480x360.jpg"
-          title="Product 4"
-          price="$99.99"
+          title="Iveco"
+          price="R500 000"
           buttonText="See Full Details"
           mileage={30500}
           transmission="Automatic"
@@ -39,8 +39,8 @@ export default function Fleet() {
         />
         <TruckCard
           imageUrl="https://cdn.yello.link/sheltonmotors/files/2024/06/06154729/20240604_164022-1-480x360.jpg"
-          title="Product 4"
-          price="$99.99"
+          title="Iveco"
+          price="R500 000"
           buttonText="See Full Details"
           mileage={30500}
           transmission="Automatic"
@@ -49,8 +49,8 @@ export default function Fleet() {
         />
         <TruckCard
           imageUrl="https://cdn.yello.link/sheltonmotors/files/2024/06/06154729/20240604_164022-1-480x360.jpg"
-          title="Product 4"
-          price="$99.99"
+          title="Iveco"
+          price="R500 000"
           buttonText="See Full Details"
           mileage={30500}
           transmission="Automatic"

@@ -52,7 +52,7 @@ export default function Home() {
         {/* Header Section */}
         <div className="md:flex justify-between items-center">
           <p className="font-semibold text-2xl">Latest Trucks</p>
-          <div>
+          <div className="py-5">
             <button className="bg-blue-700 px-28 py-3 rounded-md text-white md:px-10" onClick={() => router.push("/fleet")}>
               Show all
             </button>
@@ -64,7 +64,7 @@ export default function Home() {
           <TruckCard
             imageUrl="https://cdn.yello.link/sheltonmotors/files/2024/06/06154729/20240604_164022-1-480x360.jpg"
             title="Iveco"
-            price="$99.99"
+            price="R500 000"
             buttonText="See Full Details"
             mileage={30500}
             transmission="Automatic"
@@ -74,7 +74,7 @@ export default function Home() {
           <TruckCard
             imageUrl="https://cdn.yello.link/sheltonmotors/files/2024/06/06154729/20240604_164022-1-480x360.jpg"
             title="Iveco"
-            price="$99.99"
+            price="R500 000"
             buttonText="See Full Details"
             mileage={30500}
             transmission="Automatic"
@@ -84,7 +84,7 @@ export default function Home() {
           <TruckCard
             imageUrl="https://cdn.yello.link/sheltonmotors/files/2024/06/06154729/20240604_164022-1-480x360.jpg"
             title="Iveco"
-            price="$99.99"
+            price="R500 000"
             buttonText="See Full Details"
             mileage={30500}
             transmission="Automatic"
@@ -94,7 +94,7 @@ export default function Home() {
           <TruckCard
             imageUrl="https://cdn.yello.link/sheltonmotors/files/2024/06/06154729/20240604_164022-1-480x360.jpg"
             title="Iveco"
-            price="$99.99"
+            price="R500 000"
             buttonText="See Full Details"
             mileage={30500}
             transmission="Automatic"
