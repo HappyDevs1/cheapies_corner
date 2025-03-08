@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image";
 import TruckCard from "@/components/TruckCard";
 import { Search, Truck, Send, KeySquare } from "lucide-react";
 import { useRouter } from "next/navigation";
