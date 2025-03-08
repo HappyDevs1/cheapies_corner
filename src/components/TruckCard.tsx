@@ -1,5 +1,8 @@
+"use client"
+
 import Image from "next/image";
 import { Gauge, Settings2, CalendarDays, Truck } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 // Define the props the card will accept
 interface TruckCardProps {
@@ -14,6 +17,12 @@ interface TruckCardProps {
 }
 
 const TruckCard: React.FC<TruckCardProps> = ({ imageUrl, title, price, buttonText, mileage, transmission, year, condition }) => {
+  const router = useRouter();
+
+  const handleNavigate = () => {
+    router.push("/truck");
+  };
+
   return (
     <div className="max-w-sm rounded-lg shadow-lg overflow-hidden bg-white">
       {/* Image Section */}
@@ -56,7 +65,7 @@ const TruckCard: React.FC<TruckCardProps> = ({ imageUrl, title, price, buttonTex
 
         {/* Button */}
         <div className="mt-4">
-          <button className="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
+          <button className="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400" onClick={handleNavigate}>
             {buttonText}
           </button>
         </div>

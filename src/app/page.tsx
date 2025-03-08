@@ -57,8 +57,8 @@ export default function Home() {
         {/* Card Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-center">
           <TruckCard
-            imageUrl="https://via.placeholder.com/500"
-            title="Product 1"
+            imageUrl="https://cdn.yello.link/sheltonmotors/files/2024/06/06154729/20240604_164022-1-480x360.jpg"
+            title="Iveco"
             price="$99.99"
             buttonText="See Full Details"
             mileage={30500}
@@ -67,8 +67,8 @@ export default function Home() {
             condition="Used"
           />
           <TruckCard
-            imageUrl="https://via.placeholder.com/500"
-            title="Product 2"
+            imageUrl="https://cdn.yello.link/sheltonmotors/files/2024/06/06154729/20240604_164022-1-480x360.jpg"
+            title="Iveco"
             price="$99.99"
             buttonText="See Full Details"
             mileage={30500}
@@ -77,8 +77,8 @@ export default function Home() {
             condition="Used"
           />
           <TruckCard
-            imageUrl="https://via.placeholder.com/500"
-            title="Product 3"
+            imageUrl="https://cdn.yello.link/sheltonmotors/files/2024/06/06154729/20240604_164022-1-480x360.jpg"
+            title="Iveco"
             price="$99.99"
             buttonText="See Full Details"
             mileage={30500}
@@ -87,8 +87,8 @@ export default function Home() {
             condition="Used"
           />
           <TruckCard
-            imageUrl="https://via.placeholder.com/500"
-            title="Product 4"
+            imageUrl="https://cdn.yello.link/sheltonmotors/files/2024/06/06154729/20240604_164022-1-480x360.jpg"
+            title="Iveco"
             price="$99.99"
             buttonText="See Full Details"
             mileage={30500}
