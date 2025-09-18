@@ -200,6 +200,6 @@ copies or substantial portions of the Software.
 ---
 
 <div align="center">
-  <p><strong>Made with ❤️ by the HappyDevs1 Team</strong></p>
+  <p><strong>Made with ❤️ by HappyDevs1</strong></p>
   <p>⭐ Star this repository if you found it helpful!</p>
 </div>
